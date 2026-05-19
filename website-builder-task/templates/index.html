@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="desktop-wrapper">
+        <header class="app-header">
+            <div class="header-left">
+                <button class="back-action-btn">&#8249;</button>
+                <div class="branding">
+                    <h1>WEBSITE BUILDER</h1>
+                    <span class="sync-indicator">🔄 Auto-sync on</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="status-badge">● DRAFT</span>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <div class="form-container">
+                
+                <div class="banner-row">
+                    <button class="action-connect-btn">🤝 OPEN TO CONNECT</button>
+                </div>
+
+                <fieldset class="panel-section">
+                    <legend class="panel-legend">HERO IDENTITY</legend>
+
+                    <div class="grid-layout">
+                        <div class="form-control full-width">
+                            <label>👤 Display Name</label>
+                            <input type="text" id="display_name" placeholder="Your full name">
+                            <span class="field-hint">Updates your global profile name</span>
+                        </div>
+
+                        <div class="form-control">
+                            <label>➖ One-Line Bio</label>
+                            <input type="text" id="one_line_bio" placeholder="e.g. Founder · Keynote Speaker · Investor">
+                        </div>
+
+                        <div class="form-control">
+                            <label>❞ Tagline / Subtitle</label>
+                            <input type="text" id="tagline" placeholder="e.g. Transforming Real Estate in Mumbai">
+                        </div>
+
+                        <div class="form-control full-width">
+                            <label>📍 Location</label>
+                            <input type="text" id="location" placeholder="e.g. Mumbai · Bandra to BKC">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="panel-section">
+                    <legend class="panel-legend">MEDIA</legend>
+                    <div class="placeholder-space"></div>
+                </fieldset>
+            </div>
+        </main>
+
+        <footer class="control-toolbar">
+            <div class="toolbar-left">
+                <button id="btnPreview" class="outline-action-btn">👁️ PREVIEW</button>
+                <button id="btnShare" class="dark-action-btn">🔗 SHARE</button>
+            </div>
+            <div class="toolbar-right">
+                <button id="btnForceSave" class="primary-gradient-btn">☁️ FORCE SAVE</button>
+                <button id="btnGoLive" class="success-action-btn">🚀 GO LIVE</button>
+            </div>
+        </footer>
+    </div>
+
+    <div class="ai-chat-widget">
+        <button id="aiLauncherBtn" class="ai-launcher-btn">AI</button>
+        
+        <div id="aiChatWindow" class="ai-chat-window hidden">
+            <div class="chat-header">
+                <h3>✨ AI Assistant</h3>
+                <button id="closeChatBtn" class="close-chat-btn">&times;</button>
+            </div>
+            <div id="chatMessageLog" class="chat-message-log">
+                </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Ask AI to change fields...">
+                <button id="chatSendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
